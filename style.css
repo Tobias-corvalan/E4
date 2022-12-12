@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Pokemon';
+    src: url('Pokemon\ Solid.ttf') format('truetype');
+
+}
+
+:root{
+    --header: #ffd60a;
+    --border-style: #003566;
+    --orange: #dc562e;
+    --red: #d00000;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header);
+    box-shadow: 1px 5px 12px 1px rgba(0,0,0,0.5);
+}
+
+header img{
+    height: 100px;
+    padding: 10px;
+}
+
+body{
+    background: var(--border-style);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.Container-Pokemon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 30px;
+}
+.title{
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: 35px;
+    color: var(--orange);
+    text-align: center;
+    text-decoration: underline;
+}
+
+.form-pokemon{
+    display: flex;
+    flex-direction: column;
+}
+.container-input{
+    display: flex;
+    gap: 20px;
+}
+
+#number, .btn{
+    padding: 15px 10px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: var(--header);
+    font-family: 'zen dots', cursive;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+
+#number::-webkit-inner-spin-button, #number::-webkit-outer-spin-button{
+
+    -webkit-appearance: none;
+    margin: 0;  
+}
+#number{ -moz-appearance: textfield;}
+
+.card{
+    background-color: var(--header);
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.card img{
+    height: 223px;
+    border-bottom-left-radius: 15px;
+    background-color: var(--orange);
+    
+}
+.card-body{
+    background-color: var(--orange);
+    padding: 30px;
+    border-top-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.card-body h2{
+    font-family: 'zen dots', cursive;
+    font-size: 23px;
+    text-decoration: underline;
+}
+
+.card-body__stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: 'zen dots', cursive;
+    font-size: 20px;
+    color: var(--border-style);
+}
+
+.error{
+    background-color: #d00000;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+}
+
+.error img{
+    height: 223px;
+}
